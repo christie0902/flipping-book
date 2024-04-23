@@ -1,0 +1,63 @@
+.book {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50vw;
+}
+
+.pages {
+  height: 256px;
+  width: 600px;
+}
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.front-cover,
+.back-cover,
+.my-page {
+  height: 100%;
+    width: 100%;
+    user-select: none;
+    touch-action: none;
+}
+
+.front-cover,
+.back-cover {
+  background-color: #b91818; /* Cover background color */
+  color: white; /* Cover text color */
+}
+
+.my-page {
+  background-color: #f0f0f0; /* Page background color */
+}
+
+/* Styling specific to front and back covers */
+.front-cover,
+.back-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* Styling specific to inner pages */
+.my-page {
+  text-align: center;
+}
+
+/* Styling for shadows */
+/* Remove shadows if maxShadowOpacity is false */
+/* .page-wrapper .page-content-wrapper .page-wrapper-shadow,
+.page-wrapper .page-content-wrapper .page-wrapper-shadow:before {
+  display: ${({ maxShadowOpacity }) => (maxShadowOpacity ? 'block' : 'none')};
+} */
+
+button {
+  position: relative;
+  top: 60vh;
+}
