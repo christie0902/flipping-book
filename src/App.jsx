@@ -18,12 +18,18 @@ function MyBook() {
   return (
     <>
       <div className="pages">
-        <HTMLFlipBook
+      <HTMLFlipBook
           width={300}
           height={500}
-          showCover={true} // Set showCover to true
+          showCover={true}
           className="book"
           maxShadowOpacity={false}
+          mobileScrollSupport={true} // Enable mobile scroll support
+          swipeDistance={50} // Set swipe distance
+          useMouseEvents={true} // Enable mouse and touch events
+          usePortrait={true} // Enable portrait mode
+          useLandscape={true} // Enable landscape mode
+          flippingTime={500} // Adjust flipping animation time if needed
           ref={(node) => {
             if (node !== null) {
               book.current = node;

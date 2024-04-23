@@ -1,7 +1,7 @@
 .book {
   display: flex;
   flex-direction: column;
-  margin-left: 50vw;
+ 
 }
 
 .pages {
@@ -28,15 +28,14 @@
 
 .front-cover,
 .back-cover {
-  background-color: #b91818; /* Cover background color */
-  color: white; /* Cover text color */
+  background-color: #b91818;
+  color: white; 
 }
 
 .my-page {
-  background-color: #f0f0f0; /* Page background color */
+  background-color: #f0f0f0;
 }
 
-/* Styling specific to front and back covers */
 .front-cover,
 .back-cover {
   display: flex;
@@ -45,7 +44,6 @@
   font-size: 24px;
 }
 
-/* Styling specific to inner pages */
 .my-page {
   text-align: center;
 }
@@ -60,4 +58,10 @@
 button {
   position: relative;
   top: 60vh;
+}
+
+@media only screen and (max-width:768px) {
+  .pages {
+    width: 300px;
+  }
 }
